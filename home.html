@@ -1,0 +1,68 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block content%}
+
+<div class="card mb-3" style="max-width: 1240px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="static/assets/img/afisa3.jpg" class="img-fluid rounded-start" alt="...">
+      <p>PRO Alex mkuzu</p>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+         <script>
+          $(document).ready(function () {
+          $('#mtable').DataTable();
+      });s
+      </script>
+      
+      <div class="card"style="padding:5px">
+                  <table id="mtable" class="table table-stripped-bordered" style="width:100%">
+                      <thead>
+                          <tr>
+                              <th>HABARI</th>
+                              <th>MAELEZO</th>
+                              <th>TAREHE YA TANGAZO</th>
+                              <th>PDF</th>
+                              
+                          </tr>
+                      </thead>
+                      <tbody>
+                        {%for Announcements in Announcements%}
+                          <tr>
+                              <td>{{Announcements.heading}}</td>
+                              <td>{{Announcements.title}}</td>
+                              <td>{{Announcements.date_registered}}</td>
+                              <td><a href="{{Announcements.file.url}}">Download</a> <i class="bx bx-download"></i></a></td>
+                              
+                          </tr>
+                          {%endfor%}
+              
+                      </tbody>
+                      <tfoot>
+                          <tr>
+                            <th>HABARI</th>
+                            <th>MAELEZO</th>
+                            <th>TAREHE YA TANGAZO</th>
+                            <th>PDF</th>
+                          </tr>
+                      </tfoot>
+                  </table>
+              </div>
+
+                </div>
+              </div>
+      
+            </div>
+          </section><!-- End About Section -->     
+  
+      </div>
+    </div>
+  </div>
+</div>
+      
+       
+  {%endblock%}
+
+

@@ -1,0 +1,131 @@
+
+{%load static%}
+{%load crispy_forms_tags%}
+{%block content%}
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%} " type="text/css">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/elegant-icons.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/nice-select.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/slicknav.min.css'%}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css">
+       <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+       <script src="{% static 'js/mdb.min.js' %}"></script>
+       <link rel="stylesheet" href="fonts/icomoon/style.css">
+       <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+       <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+       <script src="//code.jquery.com/jquery-3.5.1.js"></script>
+       <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+       
+           <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+           <link rel="stylesheet" href="{% static 'ccss/jquery-ui.css'%}">
+           <link rel="stylesheet" href="{% static  'css/owl.carousel.min.css'%}">
+           <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+           <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+       
+           <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css'%}">
+       
+           <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css'%}">
+       
+           <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css'%}">
+       
+           <link rel="stylesheet" href="{% static 'css/aos.css'%}">
+       
+           <link rel="stylesheet" href="{% static 'css/style.css'%}">
+           
+       <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <h3>Ushauri wa Kibiashara kwa Kutumia Huduma za JUTEM Microfinance Loan Company</h3>
+ <br><br>
+    Ikiwa unataka kuendeleza au kuanzisha biashara na unazingatia mikopo ya kifedha kupitia JUTEM Microfinance Loan Company, yafuatayo ni ushauri wa msingi:
+    <br><br>
+    1. Tambua Aina ya Mkopo Unaohitaji
+    JUTEM inatoa huduma mbalimbali kama mikopo ya biashara, kilimo, na mikopo midogo midogo. Kabla ya kuchukua mkopo, hakikisha unajua:
+    <br><br>
+    Kiasi unachohitaji na madhumuni yake.<br><br>
+    Vigezo vya marejesho na muda wa kulipa mkopo huo.<br><br>
+    Aina ya riba (ikiwa ni ya kudumu au inayobadilika).<br><br>
+    Ushauri: Usichukue mkopo mkubwa zaidi ya mahitaji ya biashara yako ili kupunguza gharama za riba na mizigo ya malipo.
+    <br><br>
+    2. Fanya Uchambuzi wa Soko
+    Ili kuhakikisha mkopo unatumika kwa njia bora, tambua mahitaji ya wateja wako na hali ya soko.
+    <br><br>
+    Fanya utafiti wa washindani wako.<br><br>
+    Boresha bidhaa au huduma yako ili kuwa ya kipekee.<br><br>
+    Hakikisha kuna wateja wa kutosha wa bidhaa au huduma unayotoa.<br><br>
+    Ushauri: Utafiti wa kina utakusaidia kutumia mkopo kwa njia bora na kuongeza faida.<br><br>
+    
+    3. Andaa Mpango wa Biashara Thabiti<br><br>
+    Mpango wa biashara unapaswa kuonyesha kwa kina malengo ya biashara, vyanzo vya mapato, gharama za uendeshaji, na muda wa kurudisha mkopo.
+    <br><br>
+    Onyesha jinsi mkopo kutoka JUTEM utavyosaidia kukuza biashara.<br><br>
+    Weka malengo ya muda mfupi na muda mrefu.<br><br>
+    Ushauri: Mpango mzuri wa biashara unaweza pia kusaidia kuongeza nafasi ya kupata mkopo kutoka JUTEM.
+    <br><br>
+    4. Tumia Mkopo kwa Malengo Yanayokusudiwa<br><br>
+    Usitumie mkopo kwa matumizi binafsi au nje ya madhumuni ya biashara. Badala yake,
+    <br><br>
+    Nunua bidhaa au malighafi zinazohitajika kwa uzalishaji.<br><br>
+    Fanya maboresho ya teknolojia au nyenzo zitakazosaidia kuongeza ufanisi.<br><br>
+    Tumia katika uendelezaji wa bidhaa au huduma mpya.<br><br>
+    Ushauri: Kudhibiti matumizi ya mkopo husaidia biashara kukua kwa haraka na kulipa mkopo bila changamoto.
+    <br><br>
+    5. Jenga Tabia ya Kulipa kwa Wakati<br><br>
+    Marejesho ya mkopo kwa wakati yanasaidia kujenga historia nzuri ya kifedha, ambayo inaweza kukusaidia kupata mikopo zaidi siku za usoni.
+    <br><br>
+    Weka kumbukumbu nzuri za mauzo na matumizi.<br><br>
+    Weka akiba kidogo kila mwezi kwa malipo ya mkopo ili kuepuka changamoto za malipo ya ghafla.<br><br>
+    Ushauri: Ikiwa unakumbana na changamoto, wasiliana mapema na JUTEM ili kujadili mipango ya marekebisho ya malipo.
+    <br><br>
+    6. Epuka Kujilimbikizia Mikopo Mingi kwa Wakati Mmoja<br><br>
+    Kukopa zaidi ya uwezo wa biashara yako kunaweza kuathiri mtiririko wa fedha na kukuletea changamoto ya malipo.
+    <br><br>
+    Hakikisha biashara yako ina uwezo wa kulipa mkopo mmoja kabla ya kufikiria mkopo mwingine.<br><br>
+    Ushauri: Dhibiti madeni ili kuepuka athari za kifedha kama kufilisika au kushindwa kulipa.<br><br>
+    
+    Kwa kumalizia, JUTEM Microfinance Loan Company inaweza kuwa mshirika mzuri wa kifedha ikiwa utafuata mikakati bora ya matumizi ya mkopo. Hakikisha unakuwa na nidhamu ya kifedha, ukizingatia lengo kuu la kukuza biashara yako kwa mafanikio.
+    <br><h2>Tuna tumia kadi zote, miamala inafanyika kwa mitanadao yote na bank zote tanzania</h2>
+    
+    Unaposema "Tuna tumia kadi zote, miamala inafanyika kwa mitandao yote na benki zote Tanzania," unasisitiza kwamba JUTEM microfinance inatoa huduma za kifedha zilizo rahisi na zinazopatikana kwa wateja kupitia njia mbalimbali. Hii inaweza kuendana vizuri na juhudi za JUTEM kwa:
+
+<h4>Huduma Jumuishi za Malipo:</h4>
+
+1: Kuwaruhusu wateja kutumia kadi za malipo za benki kuu kama Visa, Mastercard, UnionPay, na kadhalika.<br><br>
+2: Kuwapatia urahisi wa kupata na kuweka fedha kutoka benki yoyote Tanzania kupitia miundombinu ya malipo kama NMB, CRDB, na NBC.
+Miamala Kupitia Mitandao ya Simu:<br><br>
+
+3: Kufanikisha miamala kwa mitandao yote ya simu kama M-Pesa, Tigo Pesa, Airtel Money, Halotel Money, na EzyPesa.<br><br>
+4: Hii inawapa wateja fursa ya kupata huduma za kifedha popote walipo na wakati wowote.<br><br>
+5: Huduma Zinazowiana na Maendeleo ya Kidijitali:<br><br>
+
+6: Kupunguza utegemezi wa matawi ya ofisi kwa kutoa huduma mtandaoni, ikiwemo ujumuishaji wa mifumo ya kidijitali ya benki na malipo.
+7: Kuboresha uzoefu wa wateja kupitia programu au tovuti ambayo inaweza kufanikisha miamala na upatikanaji wa taarifa kwa muda halisi.
+8: Kufikia Wateja Nchini Nzima:<br><br>
+
+Kutumia miundombinu ya benki na mitandao ya simu kuwahudumia hata wateja walio vijijini ambako benki hazifiki mara kwa mara.
+Kuboresha huduma kwa kuunganisha mfumo wa JUTEM na mifumo ya kitaifa kama Tanzania Interbank Settlement System (TISS) na Government e-Payment Gateway (GePG).<br><br>
+Kwa mtazamo huu, JUTEM microfinance inaweza kujiimarisha kama taasisi inayoweza kutoa huduma za kifedha kwa urahisi na kwa njia salama, sambamba na maboresho ya kisasa katika sekta ya kifedha Tanzania.<br><br>
+
+
+
+
+
+
+
+    
+    
+</body>
+    
+
+
+</html>
+{%endblock%}

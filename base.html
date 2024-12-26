@@ -1,0 +1,500 @@
+
+{%load static%}
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+ <!-- Google Font -->
+ <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+ <!-- Css Styles -->
+ <link href="{% static 'fontawesomefree/css1/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css1/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css1/solid.css' %}" rel="stylesheet" type="text/css"> -->
+ <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%} " type="text/css">
+ <link rel="stylesheet" href="{% static 'css1/font-awesome.min.css'%}" type="text/css">
+ <link rel="stylesheet" href="{% static 'css/elegant-icons.css'%}" type="text/css">
+ <link rel="stylesheet" href="{% static 'css/nice-select.css'%}" type="text/css">
+ <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}" type="text/css">
+ <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css'%}" type="text/css">
+ <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}" type="text/css">
+ <link rel="stylesheet" href="{% static 'css/slicknav.min.css'%}" type="text/css">
+ <link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+<script src="{% static 'js/mdb.min.js' %}"></script>
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src="//code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="{% static 'fontawesomefree/js1/fontawesome.js' %}"></script>
+    <script src="{% static 'fontawesomefree/js1/solid.js' %}"></script>
+    <script src="{% static 'fontawesomefree/js1/brands.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'ccss/jquery-ui.css'%}">
+    <link rel="stylesheet" href="{% static  'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css'%}">
+
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/aos.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    
+<header>
+  <!-- Intro settings -->
+  <style>
+    /* Default height for small devices */
+    #intro-example {
+      height: 400px;
+    }
+
+    /* Height for devices larger than 992px */
+    @media (min-width: 792px) {
+      #intro-example {
+        height: 500px;
+      }
+    }
+  </style>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-blue bg-btn btn-primary">
+    <div class="container-fluid">
+      <button
+        data-mdb-collapse-init
+        class="navbar-toggler"
+        type="button"
+        data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="{% url 'home'%}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'announcement'%}">ANNOUNCEMENT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'department'%}">DEPARTMENT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'ushauri'%}">ushauri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'application'%}">APPLICATION</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Background image -->
+  <div
+    id="intro-example"
+    class="p-5 text-center bg-image"
+    style="background-image: url('static/assets/img/pesa2.jpg');"
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">JUTEM MICROFINANCE GROUP</h1>
+          <h5 class="mb-4"><i>Karibu ujiunge nasi</i></h5>
+          <a
+            data-mdb-ripple-init
+            class="btn btn-primary btn-lg m-2"
+            href="http://127.0.0.1:8000/application/"
+            role="button"
+            rel="nofollow"
+            target="_blank"
+          >omba mkopo</a
+          >
+          <a
+            data-mdb-ripple-init
+            class="btn btn-primary btn-lg m-2"
+            href="http://127.0.0.1:8000/admin/login/?next=/admin/"
+            target="_blank"
+            role="button"
+          >LOGIN</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Background image -->
+</header>
+{% block content%}
+
+
+
+{% endblock %}
+
+  <!-- Loan Services Section Begin -->
+  <section class="loan-services spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Mkopo nafuu na sisi</h2>
+                    <p>chagua kufanya na sisi huduma za kifedha zenye ubora</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="site-section border-bottom" id="team-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">KUTANA NA WAHUDUMU WETU</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Kutana na wahudumu wenye tabasamu la uhakika na wenye hari ya kukudumia.</p>
+          </div>
+        </div>
+        <div class="row">
+          
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+             
+                <img src="static/img/loanphoto/one.jfif " alt="Image" class="img-fluid w-125 mb-19" style="height: 260px;width: 260px;">
+              </figure>
+              <div class="p-3">
+                <h3>samweli john kahage</h3>
+                <span class="position">Finance Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <figure>
+                
+                <img src="static/img/loanphoto/two.jfif" alt="Image" class="img-fluid w-125 mb-19" style="height: 260px;width: 260px;">
+              </figure>
+              <div class="p-3">
+                <h3>Daved nkya</h3>
+                <span class="position">Marketing Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <figure>
+                <img src="static/img/loanphoto/four.jfif" alt="Image" class="img-fluid w-125 mb-19" style="min-height: 260px;width: 260px;">
+              </figure>
+              <div class="p-3">
+                <h3>sara mahando</h3>
+                <span class="position">Accountant</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <figure>
+                
+                <img src="static/img/loanphoto/chaz.jpg" alt="Image" class="img-fluid w-125 mb-19" style="height: 260px;width: 260px;">
+              </figure>
+              <div class="p-3">
+                <h3>charles mwanga</h3>
+                <span class="position">ICT officer</span>
+              </div>
+            </div>
+          </div>
+
+          
+          
+        </div>
+      </div>
+      <!-- our services -->
+      <section class="site-section border-bottom bg-light" id="services-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center" data-aos="fade">
+              <h2 class="section-title mb-3">HUDUMA ZETU</h2>
+            </div>
+          </div>
+          <div class="row align-items-stretch">
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+              <div class="unit-4">
+                <div class="unit-4-icon">
+                  <img src="static/img/flaticon-svg/svg/001-wallet.svg" alt="o" class="img-fluid w-25 mb-4">
+                </div>
+                <div>
+                  <h3>Ushauri kibiashara</h3>
+                  <p>tunatoa huduma bora za ushauri wa kuanza biashara kustawisha biashara yako </p>
+                  <p><a href="{% url 'ushauri'%}">jifunze zaidi</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="unit-4">
+                <div class="unit-4-icon">
+                  <img src="static/img/flaticon-svg/svg/006-credit-card.svg" alt="" class="img-fluid w-25 mb-4">
+                </div>
+                <div>
+                  <h3>Credit Card</h3>
+                  <p>Tuna tumia kadi zote, miamala inafanyika kwa mitanadao yote na bank zote tanzania</p>
+                  <p><a href="#">jifunze zaidi</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="unit-4">
+                <div class="unit-4-icon">
+                  <img src="static/img/flaticon-svg/svg/002-rich.svg" alt="Free Website Template by Free-Template.co" class="img-fluid w-25 mb-4">
+                </div>
+                <div>
+                  <h3>Income Monitoring</h3>
+                  <p>Ushauri wa kipato chako jinsi ya kupanga bajeti ya kipato chako cha mwezi, wiki ,siku tunatoa kwenye kikundi chetu.</p>
+                  <p><a href="#">jifunze zaidi</a></p>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
+              <div class="unit-4">
+                <div class="unit-4-icon">
+                  <img src="static/img/flaticon-svg/svg/003-notes.svg" alt="Free Website Template by Free-Template.co" class="img-fluid w-25 mb-4">
+                </div>
+                <div>
+                  <h3>Ushauri wa kibima</h3>
+                  <p>Huduma za kibima kama vile umuhimu wa kupata bima ya mkopo wako kutoka taasisi ya ukopeshaji</p>
+                  <p><a href="#">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="unit-4">
+                <div class="unit-4-icon">
+                  <img src="static/img/flaticon-svg/svg/004-cart.svg" alt="Free Website Template by Free-Template.co" class="img-fluid w-25 mb-4">
+                </div>
+                <div>
+                  <h3>Elimu juu ya hisa</h3>
+                  <p>Tunatoa ushauri na elimu juu ya hisa ,hati fungani kutoka kwenye mashirika mbalimbali tanzania.</p>
+                  <p><a href="#">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="unit-4">
+                <div class="unit-4-icon">
+                  <img src="static/img/flaticon-svg/svg/005-megaphone.svg" alt="-Template.co" class="img-fluid w-25 mb-4">
+                </div>
+                <div>
+                  <h3>Mipango ya kifedha</h3>
+                  <p>Tuna toa ushauri wa kupanga fedha, kuwekeza na kupata faida kupitia kipato chako na mkopo</p>
+                  <p><a href="#">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+  
+<!-- Choose Section Begin -->
+<section class="choose spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>kwanini watu wametuchagua sisi</h2>
+                    <p>huduma zinazo tolewa na sisi zimekuwa za uhakika na zenye ufanisi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="choose__item">
+                    <img src="static/img/choose-1.png" alt="">
+                    <h5>haraka na za uhakikay</h5>
+                    <p>Huduma zetu zime kuwa za hukakika kwa kila mtu na zinzfanyika kwa haraka</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="choose__item">
+                    <img src="static/img/choose/choose-2.png" alt="">
+                    <h5>ulinzi wa taarifa zako</h5>
+                    <p>Tuna hakikisha taarifa zako za faragha zimetunzwa na kuto tolewa kwa yoyote yule</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="choose__item">
+                    <img src="static/img/choose/choose-3.png" alt="">
+                    <h5>Uthibitishwa haraka</h5>
+                    <p>kutoa huduma za mkopo haraka kwa mteja na kwa ufanisi</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="choose__item">
+                    <img src="static/img/choose/choose-4.png" alt="">
+                    <h5>Riba nafuu</h5>
+                    <p>Riba yetu ni nafuu na ina endana na riba elekezi ya serikali</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="choose__item">
+                    <img src="static/img/choose/choose-5.png" alt="">
+                    <h5>ulinzi binafsi</h5>
+                    <p>Ulinzi wa fedha za mteja na taarifa zake </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="choose__item">
+                    <img src="static/img/choose/choose-6.png" alt="">
+                    <h5>mkopo</h5>
+                    <p>mkopo wa aina zote unasaidia kutatua matatizo ya watu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Choose Section End -->
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+    
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>JUTEM MICROFINANCE GROUP
+            </h6>
+            <p>
+             Tunatoa huduma za mkopo, ushauri wa kifedha, kutana na wahudumu walioko kwenye matawi yetu yote.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Huduma
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">elimu</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">mkopo</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">ushauri</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">huduma za kifedha</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">card</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">omba mkopo</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">huduma zetu</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">msaada</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">mawasiliano</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Tanzania, Pox box 456, Moshi</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              jutemmicrofinance.co.tz
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 255 672 703 693</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 255 234 567 897</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">design by charles mwanga</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
